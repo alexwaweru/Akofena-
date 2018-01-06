@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservations</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Browser icon -->
+    <link rel="shortcut icon" href="images/akofena.png" type="image/x-icon" />
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/booking.css" />
+
+    <!-- font Awesome icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+
+    <!-- The menu for the website -->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/akofena.png" width="40" height="40" alt="">
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="booking.html">Reservation <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Enquiries -->
+    <div class="container-fluid" style=>
+      <div class="row">
+        <div class="col-md-6">
+          <p style="color: black; text-align: center;"><a href="#" class="fa fa-phone"></a>+230 54 43 49 51</p>
+        </div>
+        <div class="col-md-6">
+          <p style="color: black; text-align: center;"><a href="mailto:info@akofena.com" class="fa fa-question-circle"></a>mailto:info@akofena.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lobby Image -->
+    <div style="background: url(images/main_dine.jpg); height: 550px;" class="section1">
+      <div class="jumbotron vertical-center" id="jumbo">
+        <div class="container text-center">
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking section -->
+    <h2 align="center"><strong>RESERVATIONS</strong></h2>
+    <div class="p">
+    <div class="container-fluid" style="align-items: center;">
+      <hr>
+      <div class="row">
+
+        <div class="col-md-1" style="padding-bottom: 30px;">
+        </div>
+
+        <div class="col-md-1" style="padding-bottom: 30px;">
+            <div style="background-color: #E8E8E8;" id="section2" class="container-fluid parent" style="padding-left: 20px;">
+              <div id="child">
+                <a href="#" id="icons" class="fa fa-calendar" ></a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="padding-bottom: 30px;">
+            <div style="background-color: #E8E8E8;" id="section2" class="container-fluid">
+              <div class="container text-center" style="color: black;">
+                <h3 style="padding-top: 20px;"><strong>YOU WANT TO BOOK</strong></h3>
+                <ul style="list-style: none;">
+                  <li style="padding-top: 15px;" ><a href="#" >How do I book a room?</a></li>
+                  <li style="padding-top: 15px;" ><a data-toggle="modal" data-target="#termsModal" href="#" >What are the terms and conditions of sale?</a></li>
+                  <li style="padding-top: 15px;" ><a data-toggle="modal" data-target="#availableRooms" href="#" >Which rooms are available?</a></li>
+                  <li style="padding-top: 15px;" ><a data-toggle="modal" data-target="#availableRooms" href="#" class="btn-primary btn h2 lightBlue get-Started-btn">BOOK</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-1" style="padding-bottom: 30px;">
+            <div style="background-color: #E8E8E8;" id="section2" class="container-fluid parent" style="padding-left: 20px;">
+              <div id="child">
+                <a href="#" id="icons" class="fa fa-pencil-square-o"></a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="padding-bottom: 30px;">
+            <div style="background-color: #E8E8E8;"  id="section2" class="container-fluid">
+              <div class="container text-center" style="color: black;">
+                <h3 style="padding-top: 20px;"><strong>YOU HAVE BOOKED</strong></h3>
+                <ul style="list-style: none;">
+                  <li style="padding-top: 15px;" ><a href="#" >How do I view, change or cancel a reservation?</a></li>
+                  <li style="padding-top: 15px;" ><a data-toggle="modal" data-target="#termsModal" href="#" >What are the terms and conditions?</a></li>
+                  <li style="padding-top: 15px;" ><a data-toggle="modal" data-target="#complaintsModal" href="#" >I didn't receive a confirmation number</a></li>
+                  <li style="padding-top: 15px;" ><a href="#" class="btn-primary btn h2 lightBlue get-Started-btn">VIEW</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-1" style="padding-bottom: 30px;">
+        </div>
+
+        <div class="col-md-4" style="padding-bottom: 30px;">
+        </div>
+
+        <div class="col-md-1" style="padding-bottom: 30px;">
+            <div style="background-color: #E8E8E8;" id="section2" class="container-fluid parent" style="padding-left: 20px;">
+              <div id="child">
+                <a href="#" id="icons" class="fa fa-home homee"></a>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="padding-bottom: 30px;">
+            <div style="background-color: #E8E8E8;"  id="section2" class="container-fluid">
+              <div class="container text-center" style="color: black;">
+                <h3 style="padding-top: 20px;"><strong>YOU STAYED</strong></h3>
+                <ul style="list-style: none;">
+                  <li style="padding-top: 15px;" ><a data-toggle="modal" data-target="#complaintsModal" href="#" >I left something at the hotel</a></li>
+                  <li style="padding-top: 15px;" ><a data-toggle="modal" data-target="#ratingsModal" href="#" >I would like to share my thoughts following a stay</a></li>
+                  <li style="padding-top: 15px;" ><a data-toggle="modal" data-target="#ratingsModal" href="#" >How would you rate our services</a></li>
+                  <li style="padding-top: 15px;" ><a href="pricing-and-signup.html" class="btn-primary btn h2 lightBlue get-Started-btn">REVIEW</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-4" style="padding-bottom: 30px;">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #2F4F4F;"  class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="container">
+            <h4 class="footer"><strong>Quick Links</strong></h4>
+            <ul style="list-style: none;">
+              <li><a href="index.html"><a href="index.html" class="fa fa-home"></a>Home</a></li>
+              <li><a href="about.html"><a href="about.html" class="fa fa-info-circle"></a>About Us</a></li>
+              <li><a href="#"><a data-toggle="modal" data-target="#ratingsModal" href="#" class="fa fa-star-o"></a>Rate Us</a></li>
+              <li><a href="booking.html"><a href="booking.html" class="fa fa-ticket"></a>Reservations</a></li>
+              <li><a href="contact.html"><a href="contact.html" class="fa fa-envelope"></a>Contact US</a></li>
+              <li><a href="#"><a data-toggle="modal" data-target="#ratingsModal" href="#" class="fa fa-comments-o"></a>Feed back</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container">
+            <h4 class="footer"><strong>Contacts</strong></h4>
+            <p><a href="#" id="mapIcon" class="fa fa-map-marker"></a>
+              Labadi Area, Accra, Ghana.
+            </p>
+            <p><a href="contact.html" class="fa fa-question-circle"></a>info@akofena.com</p>
+            <p><a href="#" class="fa fa-phone"></a>+230 54 43 49 51</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container">
+            <h4 class="footer"><strong>Social Media</strong></h4>
+            <p>
+              <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+              <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+              <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+              <a href="http://www.youtube.com" class="fa fa-youtube"></a>
+              <a href="http://www.pinterest.com" class="fa fa-pinterest"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Ratings Modal -->
+    <div style="align-items: center;" class="modal fade" id="ratingsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Rate Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="php/ratings_form.php" name="ratings" method="POST" >
+            <div class="modal-body">
+              <h4 style="padding: 20px;">Average User Ratings</h4>
+              <h3 style="padding-left: 50px;"><strong>4.3</strong>/5</h3>
+              <div class="rating">
+                <label>
+                  <input type="radio" name="rate" value=5 title="5 stars"> 5
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=4 title="4 stars"> 4
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=3 title="3 stars"> 3
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=2 title="2 stars"> 2
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=1 title="1 star"> 1
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Feedback-->
+              <hr>
+              <div style="padding: 20px;" class="col-md-12 mb-4">
+               <label for="exampleFormControlTextarea1">Feedback</label>
+               <textarea type="text" class="form-control" name="feedback" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="submit" >Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Complaints Modal -->
+    <div style="align-items: center;" class="modal fade" id="complaintsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Contact Our Support Team</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Contact Form Section-->
+            <form action="php/contact_form.php" name="contact" method="POST" style="padding: 40px; " class="container" validate>
+              <!-- Name -->  
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <label>First name</label>
+                  <input type="text" class="form-control" name="fname" placeholder="First name" required>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <label>Last name</label>
+                  <input type="text" class="form-control" name="lname" placeholder="Last name" required>
+                </div>
+                <div class="col-md-12 mb-4">
+                  <label>Email</label>
+                  <input type="text" class="form-control" name="email" placeholder="Email" required>
+                </div>
+              </div>
+
+              <!-- City, State, Zip-->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <label>City</label>
+                  <input type="text" class="form-control" name="city" placeholder="City" required>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <label>State</label>
+                  <input type="text" class="form-control" name="state" placeholder="State" required>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <label>Zip</label>
+                  <input type="text" class="form-control" name="zip" placeholder="Zip" required>
+                </div>
+
+                <!-- Email Message-->
+                <div class="col-md-12 mb-4">
+                 <label>Message</label>
+                 <textarea type="text" class="form-control" name="message" rows="7"></textarea>
+              </div>
+              </div>
+
+              <!-- Button-->
+              <div class="col-md-12 mb-3">
+                 <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- terms and Conditions Modal -->
+    <div style="align-items: center;" class="modal fade alex-scroll-div" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Terms and Conditions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol>
+              <li>
+                Prepaid reservations cannot be changed and/or cancelled. Sums paid in advance as a deposit will not be reimbursed. If this is the case, it will be stipulated in the sales conditions for the rate.
+              </li>
+              <li>
+                Reservations are personal and can in no case be transferred to a third party, whether free or at a cost.
+              </li>
+              <li>
+                Complaints relating to the non-fulfillment or inadequate fulfillment of services of Akofena Hotel must be brought to the knowledge of the Hotel management via the contact details given in the hotel data sheet and provided in the Acknowledgment of Receipt.
+              </li>
+              <li>
+                Akofena Hotel is solely responsible for any damage suffered by the Customers. Also, in case of litigation, the Customer shall only contact Akofena Hotel.
+              </li>
+              <li>
+                In the case of an exceptional event, if it is impossible to make the reserved room available for the Customer, or in the event of force majeure, the Akofena Hotel reserves the right to fully or partially host the Customer at another hotel nearby and of equivalent category, subject to the prior agreement of the Customer. Any extra cost arising from the room, transportation between the two hotels and telephone charges will be paid by the Hotel chosen.
+              </li>
+              <li>
+                These general terms and conditions of sale are governed by Ghanaian law without obstructing the mandatory protective provisions that may be applicable in the Consumer's country of residence.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Available Rooms Modal -->
+    <div style="align-items: center;" class="modal fade" id="availableRooms" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Available Rooms</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a data-toggle="modal" data-target="#bookRoomsModal" href="#" target="_blank">
+                    <img src="images/pres_suite.jpg" alt="bar" height="100" style="width:100%">
+                    <div class="caption">
+                      <p>Presidential suite <br> $10,000 per night</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a data-toggle="modal" data-target="#bookRoomsModal" href="#" target="_blank">
+                    <img src="images/ex_suit.jpg" alt="indoor pool" height="100" style="width:100%">
+                    <div class="caption">
+                      <p>Executive suite <br> $5,000 per night</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a data-toggle="modal" data-target="#bookRoomsModal" href="#" target="_blank">
+                    <img src="images/room1.jpg" alt="theater" height="100" style="width:100%">
+                    <div class="caption">
+                      <p>Modern design <br> $1,000 per night</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a data-toggle="modal" data-target="#bookRoomsModal" href="#" target="_blank">
+                    <img src="images/italian.jpg" alt="theater" height="100" style="width:100%">
+                    <div class="caption">
+                      <p>Italian design <br> $1,000 per night</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a data-toggle="modal" data-target="#bookRoomsModal" href="#" target="_blank">
+                    <img src="images/classic.jpg" alt="theater" height="100" style="width:100%">
+                    <div class="caption">
+                      <p>Classic design <br> $1,000 per night</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <a data-toggle="modal" data-target="#bookRoomsModal" href="#" target="_blank">
+                    <img src="images/french.jpg" alt="theater" height="100" style="width:100%">
+                    <div class="caption">
+                      <p>French design <br> $1,000 per night</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Book Rooms Modal -->
+    <div style="align-items: center;" class="modal fade" id="bookRoomsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div style="overflow: scroll;" class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Book Room</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Room Booking Form Section-->
+            <form action="php/book_form.php" name="book" method="POST" onsubmit="return validate(this);" style="padding: 40px; " class="container">
+              <!-- Name -->  
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <input type="text" class="form-control" name="fname" placeholder="first name" required>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <input type="text" class="form-control" name="lname" placeholder="last name" required>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <input type="text" class="form-control" name="email" placeholder="email" required>
+                </div>
+              </div>
+
+              <!-- Room, Number of rooms, Cost-->
+              <div class="row">
+                <div class="form-group col-md-6 mb-4">
+                  <label>Room</label>
+                  <select id="validationCustom03" name="room" id="room" class="form-control" required>
+                    <option>Presidential Suite $10,000</option>
+                    <option>Executive Suite $5,000</option>
+                    <option>Modern Design $1,000</option>
+                    <option>Classic Design $1,000</option>
+                    <option>French Design $1,000</option>
+                    <option>Italian Design $1,000</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <label>Number of rooms</label>
+                  <input type="text" class="form-control"  name="no_of_rooms" id="rooms_no" placeholder="0" required>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <label>Total cost</label>
+                  <input type="text" class="form-control" name="cost" id="total" placeholder="$ 0.00"  >
+                </div>
+                <div class="col-md-3 mb-4">
+                  <label>Deposit</label>
+                  <input type="text" class="form-control" name="deposit" placeholder="$ 0.00" value=1000 disabled>
+                </div>
+                <div class="col-md-9 mb-4"></div>
+                <div class="col-md-2 mb-4"></div>
+                <div class="col-md-8 mb-4">
+                  <div class="card">
+                    <div class="card-header border-success">Enter Card Details <img src="images/cards.png"> </div>
+                    <div class="card-body border-success">
+                      <div class="row">
+                        <div class="col-md-12 mb-4">
+                          <input type="text" class="form-control" name="card_no" placeholder="Card Number" required>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <input type="text" class="form-control" name="expiry" placeholder="MM/YY" required>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <input type="text" class="form-control" name="cvc" placeholder="CVC" required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>   
+              </div>
+              <!-- Button-->
+              <div style="padding-top: 15px; padding-left: 15px; padding-bottom: 15px;" class="col-md-12 mb-3">
+                 <button class="btn btn-primary" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- External Scripts-->
+    <script type="text/javascript" src="js/booking.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--
+       _
+   .__(.)< (NJORO)
+    \___)
+~~~~~~~~~~~~~~~~~~~-->

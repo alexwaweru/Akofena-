@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+
+    <!-- Browser icon -->
+    <link rel="shortcut icon" href="images/akofena.png" type="image/x-icon" />
+
+    <!-- font Awesome icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+      body, html {
+        height: 100%;
+        margin: 0;
+        font: 400 15px/1.8 "Lato", sans-serif;
+        color: #ffffff;
+      }
+
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        position: relative;
+        opacity: 0.8;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+      .bgimg-1 {
+        background-image: url("images/casablanca.jpg");
+        min-height: 100%;
+      }
+
+      .bgimg-2 {
+        background-image: url("images/lobb2.jpg");
+        min-height: 400px;
+      }
+
+      .bgimg-3 {
+        background-image: url("images/lobby1.jpg");
+        min-height: 400px;
+      }
+
+      .caption {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+      }
+
+      .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+      }
+
+      h3 {
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font: 20px "Lato", sans-serif;
+        color: #111;
+      }
+
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1024px) {
+          .bgimg-1, .bgimg-2, .bgimg-3 {
+              background-attachment: scroll;
+          }
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- The menu for the website -->
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/akofena.png" width="40" height="40" alt="">
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="booking.html">Reservation</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+    <!-- Parallax body view-->
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">AKOFENA INTERNATIONAL HOTEL</span>
+      </div>
+    </div>
+
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h3 style="text-align:center;">Reimagining Comfort</h3>
+      <p>Akofena is pioneering a fresh approach to hotel experience in modern Africa; offering international standard accomodation, modern hotel facilities, executive and presidential accomodation spaces and events management in unique and imaginative way. By integrating classic, modern and african traditional dishes, architecture and experience, providing artistic and inspiring views, and training its management and staff in world class institutions, Akofena International is pioneering a new take on hotel experience in Africa.</p>
+    </div>
+
+    <div class="bgimg-2">
+      <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: black;">MANAGEMENT</span>
+      </div>
+    </div>
+
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>The management team is headed by Miss Maureen Waithera, a delightful stanford MBA holder specialised in franchise management. The head chef, Mr. Sabelo Dube, is a seasoned chief who onced graced the kitchens at Buckingham Palace. </p>
+      </div>
+    </div>
+
+    <div class="bgimg-3">
+      <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: black;">BRAND</span>
+      </div>
+    </div>
+
+    <div style="position:relative;">
+      <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>Akofena International Hotel is the West Africa brand partner of Virgin Arlantic Group. Other brands from other regions include; Jacaranda in East Africa, Birchwood in Southern Africa, Hotel Somba in Central Africa and Parador de Melilla in Nothern Africa.</p>
+      </div>
+    </div>
+
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border"><a href="contact.html"><button class="btn btn-outline-success my-2 my-sm-0">Contact Us</button></a></span>
+      </div>
+    </div>
+
+    <!-- Ratings Modal -->
+    <div style="align-items: center;" class="modal fade" id="ratingsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Rate Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="php/ratings_form.php" name="ratings" method="POST" >
+            <div class="modal-body">
+              <h4 style="padding: 20px;">Average User Ratings</h4>
+              <h3 style="padding-left: 50px;"><strong>4.3</strong>/5</h3>
+              <div class="rating">
+                <label>
+                  <input type="radio" name="rate" value=5 title="5 stars"> 5
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=4 title="4 stars"> 4
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=3 title="3 stars"> 3
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=2 title="2 stars"> 2
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=1 title="1 star"> 1
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Feedback-->
+              <hr>
+              <div style="padding: 20px;" class="col-md-12 mb-4">
+               <label for="exampleFormControlTextarea1">Feedback</label>
+               <textarea type="text" class="form-control" name="feedback" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="submit" >Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #2F4F4F;"  class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="container">
+            <h4 class="footer"><strong>Quick Links</strong></h4>
+            <ul style="list-style: none;">
+              <li><a href="index.html"><a href="index.html" class="fa fa-home"></a>Home</a></li>
+              <li><a href="about.html"><a href="about.html" class="fa fa-info-circle"></a>About Us</a></li>
+              <li><a href="#"><a data-toggle="modal" data-target="#ratingsModal" href="#" class="fa fa-star-o"></a>Rate Us</a></li>
+              <li><a href="booking.html"><a href="booking.html" class="fa fa-ticket"></a>Reservations</a></li>
+              <li><a href="contact.html"><a href="contact.html" class="fa fa-envelope"></a>Contact US</a></li>
+              <li><a href="#"><a data-toggle="modal" data-target="#ratingsModal" href="#" class="fa fa-comments-o"></a>Feed back</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container">
+            <h4 class="footer"><strong>Our Location</strong></h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32531238.956637084!2d-18.09112415421453!3d5.552413440321674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0377a542874ae5e!2sAkofena+International+Hotel!5e0!3m2!1sen!2sgh!4v1510323636305" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container">
+            <h4 class="footer"><strong>Social Media</strong></h4>
+            <p>
+              <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+              <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+              <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+              <a href="http://www.youtube.com" class="fa fa-youtube"></a>
+              <a href="http://www.pinterest.com" class="fa fa-pinterest"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- External Scripts-->
+    <script type="text/javascript" src="js/about.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+<!--
+       _
+   .__(.)< (NJORO)
+    \___)
+~~~~~~~~~~~~~~~~~~~-->

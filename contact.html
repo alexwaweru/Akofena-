@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Contact Us</title>
+
+	    <!-- Bootstrap -->
+	    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+	    <!-- Browser icon -->
+    	<link rel="shortcut icon" href="images/akofena.png" type="image/x-icon" />
+
+	    <!-- font Awesome icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+
+
+		<!-- The menu for the website -->
+	    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+	      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">
+	        <img src="images/akofena.png" width="40" height="40" alt="">
+	      </a>
+
+	      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	        <ul class="navbar-nav mr-auto">
+	          <li class="nav-item">
+	            <a class="nav-link" href="booking.html">Reservation</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="about.html">About Us</a>
+	          </li>
+	          <li class="nav-item active">
+	            <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span> </a>
+	          </li>
+	        </ul>
+	        <form class="form-inline my-2 my-lg-0">
+	          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+	          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	        </form>
+	      </div>
+	    </nav>
+
+		 <!-- Contact Form Section-->
+		 <form action="php/contact_form.php" name="contact" method="POST" style="padding: 40px; " class="container" id="needs-validation" validate>
+
+		 <!-- Name -->	
+		  <div class="row">
+		    <div class="col-md-4 mb-4">
+		      <label>First name</label>
+		      <input type="text" class="form-control" name="fname" placeholder="First name" required>
+		    </div>
+		    <div class="col-md-4 mb-4">
+		      <label>Last name</label>
+		      <input type="text" class="form-control" name="lname" placeholder="Last name" required>
+		    </div>
+        <div class="col-md-4 mb-4">
+          <label>Email</label>
+          <input type="text" class="form-control" name="email" placeholder="Email" required>
+        </div>
+		  </div>
+
+		  <!-- City, State, Zip-->
+		  <div class="row">
+		    <div class="col-md-6 mb-4">
+		      <label>City</label>
+		      <input type="text" class="form-control" name="city" placeholder="City" required>
+		    </div>
+		    <div class="col-md-3 mb-4">
+		      <label>State</label>
+		      <input type="text" class="form-control" name="state" placeholder="State" required>
+		    </div>
+		    <div class="col-md-3 mb-4">
+		      <label >Zip</label>
+		      <input type="text" class="form-control" name="zip" placeholder="Zip" required>
+		    </div>
+
+		    <!-- Email Message-->
+		    <div class="col-md-12 mb-4">
+			   <label>Message</label>
+			   <textarea type="text" class="form-control" name="message" rows="7" required></textarea>
+			</div>
+		  </div>
+
+		  <!-- Button-->
+		  <div class="col-md-12 mb-3">
+			   <button class="btn btn-primary" type="submit">Submit</button>
+		  </div>
+		</form>
+
+	<!-- Ratings Modal -->
+    <div style="align-items: center;" class="modal fade" id="ratingsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Rate Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="ratings_form.php" name="ratings" method="POST" >
+            <div class="modal-body">
+              <h4 style="padding: 20px;">Average User Ratings</h4>
+              <h3 style="padding-left: 50px;"><strong>4.3</strong>/5</h3>
+              <div class="rating">
+                <label>
+                  <input type="radio" name="rate" value=5 title="5 stars"> 5
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=4 title="4 stars"> 4
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=3 title="3 stars"> 3
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=2 title="2 stars"> 2
+                </label>
+                <label>
+                  <input type="radio" name="rate" value=1 title="1 star"> 1
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Feedback-->
+              <hr>
+              <div style="padding: 20px;" class="col-md-12 mb-4">
+               <label for="exampleFormControlTextarea1">Feedback</label>
+               <textarea type="text" class="form-control" name="feedback" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="submit" >Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+		
+	<!-- Footer -->
+    <div style="background-color: #2F4F4F;"  class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="container">
+            <h4 class="footer"><strong>Quick Links</strong></h4>
+            <ul style="list-style: none;">
+              <li><a href="index.html"><a href="index.html" class="fa fa-home"></a>Home</a></li>
+              <li><a href="about.html"><a href="about.html" class="fa fa-info-circle"></a>About Us</a></li>
+              <li><a href="#"><a data-toggle="modal" data-target="#ratingsModal" href="#" class="fa fa-star-o"></a>Rate Us</a></li>
+              <li><a href="booking.html"><a href="booking.html" class="fa fa-ticket"></a>Reservations</a></li>
+              <li><a href="contact.html"><a href="contact.html" class="fa fa-envelope"></a>Contact US</a></li>
+              <li><a href="#"><a data-toggle="modal" data-target="#ratingsModal" href="#" class="fa fa-comments-o"></a>Feed back</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container">
+            <h4 class="footer"><strong>Contacts</strong></h4>
+            <p><a href="#" id="mapIcon" class="fa fa-map-marker"></a>
+              Labadi Area, Accra, Ghana.
+            </p>
+            <p><a href="contact.html" class="fa fa-question-circle"></a>info@akofena.com</p>
+            <p><a href="#" class="fa fa-phone"></a>+230 54 43 49 51</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container">
+            <h4 class="footer"><strong>Social Media</strong></h4>
+            <p>
+              <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+              <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+              <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+              <a href="http://www.youtube.com" class="fa fa-youtube"></a>
+              <a href="http://www.pinterest.com" class="fa fa-pinterest"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script type="text/javascript" src="js/jquery.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <!-- External Scripts-->
+    	<script type="text/javascript" src="js/contact.js"></script>
+    	<!-- Google Maps API Key -->
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM0P9M5jyhvfRcHhtB0iBtFuBYznoVqEE&callback=initMap"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="bootstrap/js/bootstrap.min.js"></script>
+		</body>
+</html>
+<!--
+       _
+   .__(.)< (NJORO)
+    \___)
+~~~~~~~~~~~~~~~~~~~-->
